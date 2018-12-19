@@ -1,10 +1,15 @@
 package com.example.demo.macdo;
 
+import com.opencsv.bean.CsvBindByPosition;
+
 public class Macdo {
-	
+	@CsvBindByPosition(position = 0)
 	private Double codeEtat;
+	@CsvBindByPosition(position = 1)
 	private Double number;
+	@CsvBindByPosition(position = 2)
 	private String nom;
+	@CsvBindByPosition(position = 3)
 	private String adresse;
 
 	public Macdo() {
